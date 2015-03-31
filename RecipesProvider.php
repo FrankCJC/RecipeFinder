@@ -44,10 +44,3 @@ class RecipesProvider
     }
 
 }
-
-return;
-include_once 'BootStrap.php';
-$r = RecipesProvider::initFromJson('recipes.json');
-print_r($r);
-//$rName = $r->findSuitableRecipeByIngredients();
-//print_r($rName);

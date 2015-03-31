@@ -128,17 +128,3 @@ class ProductsProvider
     }
 
 }
-
-return;
-include_once 'BootStrap.php';
-$p = ProductsProvider::initFromCSV('fridge.csv');
-print_r($p);
-
-$i1 = new stdClass();
-$i1->item = 'bread';
-$i1->amount = 10;
-$i1->unit = 'slices';
-
-$ingredients = array($i1);
-$a = $p->findClosetAvailableRecipe($ingredients, ' 2013-01-01');
-print_r($a);
